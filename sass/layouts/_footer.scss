@@ -1,0 +1,129 @@
+.fl-site-footer {
+    background-color: $nero-black;
+    padding-bottom: 49px;
+
+    .footer-brand-logo {
+        margin: 0 auto;
+        display: inline-block;
+        background: linear-gradient(310.58deg, rgba(246, 205, 96, 0.62) 1.09%, rgba(255, 255, 255, 0.28) 98.04%);
+        padding: 100px 60px;
+        margin-bottom: 63px;
+
+        @include media-breakpoint-down(xxl) {
+            padding: 80px 60px;
+        }
+
+        @include media-breakpoint-down(lg) {
+            padding: 60px 50px;
+        }
+
+        @include media-breakpoint-down(sm) {
+            padding: 50px 40px;
+        }
+
+    }
+
+    .heading-3 {
+        color: $secondary;
+        margin-bottom: 60px;
+    }
+
+
+    .fl-footer-form {
+        .fl-custom-input {
+            border-bottom: 0.5px solid $secondary;
+            padding-bottom: 16px;
+            width: 80%;
+            margin: 0 auto;
+
+            &.last {
+                width: 93.5%;
+
+                @include media-breakpoint-down(lg) {
+                    width: 100%;
+                }
+            }
+
+            &.divider {
+                position: relative;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 25%;
+                    right: -16%;
+                    height: 45px;
+                    width: 0.5px;
+                    transform: rotate(30deg);
+                    background-color: $secondary;
+
+                    @include media-breakpoint-down(lg) {
+                        display: none;
+                    }
+                }
+            }
+
+            .form-control {
+                background-color: transparent;
+                border: 0;
+                padding-left: 0;
+                font-size: 16px;
+                line-height: 154.19%;
+                color: $secondary;
+                @include font-props(400, $font-roboto, capitalize);
+
+                &::placeholder {
+                    font-size: 16px;
+                    line-height: 154.19%;
+                    color: $secondary;
+                    @include font-props(400, $font-roboto, capitalize);
+                }
+
+                &:focus {
+                    border: 0;
+                    outline: none;
+                    box-shadow: none;
+                }
+            }
+
+            @include media-breakpoint-down(lg) {
+                width: 100%;
+            }
+        }
+
+        .form-submit-btn {
+            margin-top: 80px;
+
+            @include media-breakpoint-down(lg) {
+                margin-top: 60px;
+            }
+
+            @include media-breakpoint-down(sm) {
+                margin-top: 30px;
+            }
+        }
+
+        textarea{
+            resize: none;
+        } 
+    }
+
+    .footer-copyright {
+        background-color: $warning;
+        padding: 12px 0;
+        margin-top: 75px;
+        text-align: center;
+
+        p {
+            color: $primary;
+        }
+
+        @include media-breakpoint-down(sm) {
+            margin-top: 60px;
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        padding-bottom: 30px;
+    }
+}

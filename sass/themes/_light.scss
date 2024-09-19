@@ -1,0 +1,5 @@
+:root {
+    --primary: #{$secondary};
+    --secondary: #{$primary};
+    --backgroundColor : #{$backgroundColorLight};
+}

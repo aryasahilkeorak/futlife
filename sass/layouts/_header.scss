@@ -1,0 +1,31 @@
+.dt-site-header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid var(--secondary);
+
+    .dt-site-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+
+        #themeSwitcher {
+            cursor: pointer;
+        }
+    }
+
+    @include media-breakpoint-down(xl) {
+        padding: 1rem 0;
+    }
+
+    @include media-breakpoint-down(lg) {
+        padding: .8rem 0;
+    }
+    @include media-breakpoint-down(sm){
+        padding: .7rem 0; 
+    }
+
+}
